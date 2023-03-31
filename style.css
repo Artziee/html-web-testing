@@ -1,0 +1,1036 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px ;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    color: #fff;
+    font-size: 2em;
+    cursor: default;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    padding: 6px 15px;
+    border-radius: 4px;
+}
+
+.navbar a:hover, .navbar a.active {
+    background: #0d37aa;
+}
+
+/*.parallax {
+    position: relative;
+    height: 100vh;
+}
+
+#logo {
+    position:absolute;
+    top: 200;
+    right: 10%;
+    width: 30%;
+    z-index: 5;
+    transform: translateY(-50%);
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px ;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    color: #fff;
+    font-size: 2em;
+    cursor: default;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+.navbar a:hover, .navbar a.active {
+    background: #ffffff;
+}
+
+/*.parallax {
+    position: relative;
+    height: 100vh;
+}
+
+#logo {
+    position:absolute;
+    top: 200;
+    right: 10%;
+    width: 30%;
+    z-index: 5;
+    transform: translateY(-50%);
+} */
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background: url("background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+}
+
+.background2{
+    width: 100%;
+    height: 100vh;
+    background: url("background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+.container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 12;
+  }
+  
+  .container2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .container2.show {
+    opacity: 1;
+    z-index: 3;
+  }
+
+
+.container .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding: 20px 50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.content .logo{
+    font-size: 30px;
+    line-height: 8;
+}
+
+.text-sci h2{
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 0;
+}
+
+.text-sci h2 span{
+    font-size: 25px;
+}
+
+.text-sci p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.social-icons a i {
+    font-size: 22px;
+    color: white;
+    margin-right: 10px;
+    transition: .5s ease;
+}
+
+.social-icons a:hover i{
+    transform: scale(1.6);
+}
+
+
+.container .logreg-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+}
+
+.logreg-box .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: white;
+}
+
+.logreg-box .form-box.register{
+    transform: translate(430px);
+}
+
+
+.form-box h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+.form-box .input-box{
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    padding-right: 28px;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 13px;
+    right: 0;
+    font-size: 19px;
+
+
+}
+
+.form-box .remember-forgot{
+    font-size: 14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.remember-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: whitesmoke;
+    border-radius: 5px;
+    border: black thin;
+    outline: black thin;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.form-box .login-register{
+    font-size: 14,5px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.login-register p a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+
+
+}
+
+/* container2*/
+
+.container2 .logreg-box2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.logreg-box2 .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: white;
+}
+
+.form-box h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+.form-box .input-box2{
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+
+}
+
+.input-box2 input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    padding-right: 28px;
+}
+
+.input-box2 label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.input-box2 input:focus~label,
+.input-box2 input:valid~label{
+    top: -5px;
+}
+
+.input-box2 .icon{
+    position: absolute;
+    right: 13px;
+    right: 0;
+    font-size: 19px;
+
+
+}
+
+/* form box 3*/
+
+
+.form-box .input-box3{
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+
+}
+
+.input-box3 input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    padding-right: 28px;
+}
+
+.input-box3 label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.input-box3 input:focus~label,
+.input-box3 input:valid~label{
+    top: -5px;
+}
+
+.input-box3 .icon{
+    position: absolute;
+    right: 13px;
+    right: 0;
+    font-size: 19px;
+
+
+}
+
+.form-box .remember-forgot{
+    font-size: 14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.remember-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: whitesmoke;
+    border-radius: 5px;
+    border: black thin;
+    outline: black thin;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.form-box .login-register{
+    font-size: 14,5px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.login-register p a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+
+
+}
+
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One");
+
+.store-container {
+  line-height:0;
+  margin: 50px auto;
+  width: 60%;
+}
+.stroke {
+  stroke: #1e699f;
+  stroke-width: 5;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.round-end {
+  stroke-linecap: round;
+}
+#store {
+  animation: fadeIn 0.8s ease-in;
+}
+.border-animation {
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+.border-animation:after {
+  content: "";
+  background: linear-gradient(45deg, #ccc 48.9%, #0170bb 49%);
+  background-size: 300% 300%;
+  border-radius: 10px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  z-index: -1;
+  animation: borderGradient 8s linear both infinite;
+}
+@keyframes borderGradient {
+  0%,
+  100% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+#browser {
+  transform: translateY(-100%);
+  -webkit-animation: moveDown 1.5s cubic-bezier(0.77, -0.5, 0.3, 1.5) forwards;
+  animation: moveDown 1.5s cubic-bezier(0.77, -0.5, 0.3, 1.5) forwards;
+}
+@keyframes moveDown {
+  from {
+    transform: translate(0, -100%);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+#toldo {
+  animation: fadeIn 1s 1.4s ease-in forwards;
+}
+.grass {
+  animation: fadeIn 0.5s 1.6s ease-in forwards;
+}
+#window {
+  animation: fadeIn 0.5s 1.8s ease-in forwards;
+}
+#door {
+  animation: fadeIn 0.5s 2s ease-in forwards;
+}
+#sign {
+  transform-origin: 837px 597px;
+  animation: pendulum 1.5s 2s ease-in-out alternate;
+}
+.trees {
+  animation: fadeIn 0.5s 2.2s ease-in forwards;
+}
+#toldo,
+.grass,
+#window,
+#door,
+.trees,
+.cat,
+.cat-shadow,
+.box,
+.parachute,
+.tshirt,
+.cap,
+.ball,
+#text,
+#button,
+.sky-circle,
+.sky-circle2,
+.sky-circle3 {
+  opacity: 0;
+}
+@keyframes pendulum {
+  20% {
+    transform: rotate(60deg);
+  }
+  40% {
+    transform: rotate(-40deg);
+  }
+  60% {
+    transform: rotate(20deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+}
+.cat {
+  transform-origin: 1145px 620px;
+}
+.cat-shadow {
+  transform-origin: 1115px 625px;
+}
+#store:hover .cat {
+  animation: catHi 3s 3s cubic-bezier(0.7, -0.5, 0.3, 1.4);
+}
+#store:hover .cat-shadow {
+  animation: catShadow 4s 2s cubic-bezier(0.7, -0.5, 0.3, 1.4) alternate;
+}
+@keyframes catHi {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  10%,
+  60% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes catShadow {
+  0%,
+  100% {
+    transform: translate(40px, -35px) scale(0.3);
+  }
+  10%,
+  60% {
+    opacity: 1;
+    transform: translate(-5px, 10px) scale(0.5);
+  }
+  60% {
+    opacity: 0;
+  }
+}
+.box,
+.parachute {
+  transform-origin: 430px 100px;
+  animation: moveBox 14s 4s linear forwards infinite;
+}
+.parachute {
+  animation: parachute 14s 4s linear forwards infinite;
+}
+@keyframes moveBox {
+  0% {
+    opacity: 0;
+    transform: translate(0, -150px) rotate(20deg);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(0, 100px) rotate(-15deg);
+  }
+  25% {
+    transform: translate(0, 250px) rotate(10deg);
+  }
+  30% {
+    transform: translate(0, 350px) rotate(-5deg);
+  }
+  35% {
+    opacity: 1;
+    transform: translate(0, 570px) rotate(0deg);
+  }
+  45%,
+  100% {
+    opacity: 0;
+    transform: translate(0, 570px);
+  }
+}
+@keyframes parachute {
+  0% {
+    transform: translate(0, -150px) rotate(20deg) scale(0.8);
+    opacity: 0;
+  }
+  15% {
+    transform: translate(0, 100px) rotate(-15deg) scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(0, 250px) rotate(10deg);
+  }
+  30% {
+    transform: translate(0, 350px) rotate(-5deg);
+  }
+  33% {
+    transform: translate(0, 460px) rotate(0deg) scale(0.9);
+    opacity: 1;
+  }
+  45%,
+  100% {
+    transform: translate(0, 480px);
+    opacity: 0;
+  }
+}
+.tshirt {
+  animation: fadeInOut 42s 10s ease-in forwards infinite;
+}
+.cap {
+  animation: fadeInOut 42s 24s ease-in forwards infinite;
+}
+.ball {
+  animation: fadeInOut 42s 38s ease-in forwards infinite;
+}
+#text,
+#button {
+  animation: fadeIn 1s 5s ease-in forwards;
+}
+@keyframes fadeInOut {
+  5%,
+  12% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+}
+.cloud {
+  animation: clouds 50s linear backwards infinite;
+}
+.cloud2 {
+  animation: clouds 40s 40s linear backwards infinite;
+}
+.plane {
+  animation: clouds 30s linear backwards infinite;
+  will-change: transform;
+}
+@keyframes clouds {
+  from {
+    transform: translate(-150%, 0);
+  }
+  to {
+    transform: translate(150%, 0);
+  }
+}
+.sky-circle {
+  animation: fadeInOut 10s 5s ease-in infinite;
+}
+.sky-circle2 {
+  animation: fadeInOut 12s 30s ease-in infinite;
+}
+.sky-circle3 {
+  animation: fadeInOut 8s 40s ease-in infinite;
+}
+
+/* Define initial scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+    background-color: #eee;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #eee;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 10px;
+    border: 3px solid #eee;
+  }
+  
+  /* Define hover styles */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #333;
+    width: 20px; /* Increase thumb width by 2px */
+    height: 12px; /* Increase thumb height by 2px */
+    transition: all 0.2s ease-in-out; /* Add a smooth transition effect */
+  }
+
+  .hero-inner {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .wrapper {
+    position: relative;
+    padding: 20px;
+  }
+  
+  .round-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 80%;
+    cursor: pointer;
+  }
+
+  .store-container4 {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.store-container4 {
+  margin-top: 100px; /* Add 20px margin to the top of the container */
+}
+
+.text-sci3 {
+  padding-top: 80px; /* Adjust the value as needed */
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-box2, .input-box3, .input-box4 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 300px;
+}
+
+textarea{
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #ffffff;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.input-box2 input[type="text"]:focus + label, .input-box2 input[type="email"]:focus + label,
+.input-box2 select:focus + label, .input-box2 textarea:focus + label,
+.input-box2 input[type="date"]:focus + label, .input-box2 input[type="file"]:focus + label,
+.input-box3 input[type="text"]:focus + label, .input-box3 input[type="email"]:focus + label,
+.input-box3 select:focus + label, .input-box3 textarea:focus + label,
+.input-box3 input[type="date"]:focus + label, .input-box3 input[type="file"]:focus + label,
+.input-box4 input[type="text"]:focus + label, .input-box4 input[type="email"]:focus + label,
+.input-box4 select:focus + label, .input-box4 textarea:focus + label,
+.input-box4 input[type="date"]:focus + label, .input-box4 input[type="file"]:focus + label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+}
+
+.input-box2,
+.input-box3,
+.input-box4 {
+  display: inline-block;
+  width: 45%;
+  margin-right: 10px;
+}
+
+.input-box2:last-of-type,
+.input-box3:last-of-type,
+.input-box4:last-of-type {
+  margin-right: 0;
+}
+
+
+
+
+.input-box2 input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    padding-right: 28px;
+}
+
+.input-box2 label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.input-box2 input:focus~label,
+.input-box2 input:valid~label{
+    top: -5px;
+}
+
+.input-box2 .icon{
+    position: absolute;
+    right: 13px;
+    right: 0;
+    font-size: 19px;
+
+
+}
+
+/* form box 3*/
+
+
+.form-box .input-box3{
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+
+}
+
+.input-box3 input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    padding-right: 28px;
+}
+
+.input-box3 label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.input-box3 input:focus~label,
+.input-box3 input:valid~label{
+    top: -5px;
+}
+
+.input-box3 .icon{
+    position: absolute;
+    right: 13px;
+    right: 0;
+    font-size: 19px;
+
+
+}
+
+  
+  
+  
+  
+  
+  
+
